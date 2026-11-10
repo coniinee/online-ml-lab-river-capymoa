@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "Phishing", "model": "LinearLogistic", "seed": 42, "library": "CapyMOA", "id": "classification__Phishing__42__LinearLogistic__CapyMOA"}

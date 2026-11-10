@@ -1,0 +1,111 @@
+{
+  "dataset": "SEARecurring",
+  "seed": 43,
+  "repeat": 2,
+  "prediction_sha256": "c0a3dc6104b7feffcf6f9e4032d018198ce7ba4263444d4a8c0e18be0a3db2ca",
+  "metrics": {
+    "accuracy": 0.8716,
+    "macro_f1": 0.8705325877946352,
+    "kappa": 0.7410827299156121
+  },
+  "selection_sha256": "a13bbf5283dae6d2ecf00ceaeffedae0c2693d534bd2901c1a4666883aa58536",
+  "final_state": {
+    "schema": 2,
+    "method": "AutoClass",
+    "observations": 10000,
+    "best_model_index": 4,
+    "candidates": [
+      {
+        "slot": 0,
+        "id": "eb1b6c76fbfdb2fe",
+        "model": "moa.classifiers.trees.HoeffdingTree",
+        "parameters": "-g 100",
+        "search_parameters": {
+          "g": "100",
+          "c": "1.0E-7"
+        },
+        "performance": 0.0
+      },
+      {
+        "slot": 1,
+        "id": "8c5758884358bcc7",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 100 -c 0.001",
+        "search_parameters": {
+          "g": "100",
+          "c": "0.001"
+        },
+        "performance": 0.0
+      },
+      {
+        "slot": 2,
+        "id": "27a8b442f7424f98",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 152 -c 0.005665743569829729",
+        "search_parameters": {
+          "g": "152",
+          "c": "0.005665743569829729"
+        },
+        "performance": 0.8520000000000006
+      },
+      {
+        "slot": 3,
+        "id": "a344b0d93e165426",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 96 -c 0.006525329594803351",
+        "search_parameters": {
+          "g": "96",
+          "c": "0.006525329594803351"
+        },
+        "performance": 0.8680000000000007
+      },
+      {
+        "slot": 4,
+        "id": "7baab609b27a9d91",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 92 -c 0.00848859371409913",
+        "search_parameters": {
+          "g": "92",
+          "c": "0.00848859371409913"
+        },
+        "performance": 0.8640000000000007
+      },
+      {
+        "slot": 5,
+        "id": "ee3e95df045ff39d",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 51 -c 0.006689110376706173",
+        "search_parameters": {
+          "g": "51",
+          "c": "0.006689110376706173"
+        },
+        "performance": 0.8240000000000006
+      },
+      {
+        "slot": 6,
+        "id": "949e62cd14686ce9",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 147 -c 0.006931345683044358",
+        "search_parameters": {
+          "g": "147",
+          "c": "0.006931345683044358"
+        },
+        "performance": 0.8760000000000007
+      },
+      {
+        "slot": 7,
+        "id": "fec2f68a090e19d7",
+        "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+        "parameters": "-g 109 -c 0.001156892513003311",
+        "search_parameters": {
+          "g": "109",
+          "c": "0.001156892513003311"
+        },
+        "performance": 0.8520000000000006
+      }
+    ],
+    "total_models": 8,
+    "random_seed": 43,
+    "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+  }
+}

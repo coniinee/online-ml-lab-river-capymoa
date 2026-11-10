@@ -1,0 +1,18 @@
+{
+  "patch_version": 1,
+  "upstream_moa_sha256": "e7d7c3d533a4800bf2581f820d2c1e9310d70ff40b52fc1a742793eceb89a660",
+  "overlay_sha256": "0dcf5096735e307b8a13c8148168dfa09faee7b355197042e031e10068c6b259",
+  "replacements": {
+    "moa/classifiers/meta/AutoML/AutoClass.class": 1,
+    "moa/classifiers/meta/AutoML/BooleanParameter.class": 1,
+    "moa/classifiers/meta/AutoML/CategoricalParameter.class": 1,
+    "moa/classifiers/meta/AutoML/IntegerParameter.class": 1,
+    "moa/classifiers/meta/AutoML/OrdinalParameter.class": 1,
+    "moa/classifiers/meta/AutoML/NumericalParameter.class": 1,
+    "moa/classifiers/meta/AutoML/TruncatedNormal.class": 1
+  },
+  "sources": {
+    "vendor/java/lab4/PatchAutoML.java": "8ce56b47b9725c85e02a2d83c53917f27850703caae96326ea087eb6d6099ef4",
+    "vendor/java/lab4/SeededRandom.java": "cb01803f8badb65ed4c337ce299e26cf2280c18271bfcbd942d1811aca2008d8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "report_tables": 12,
+  "main_figures": 4,
+  "local_links_checked": 9,
+  "executed_notebook_cells": 8,
+  "notebook_errors": 0,
+  "html_embedded_figures": 10,
+  "all_168_current_runtime_identities_and_content_seals_valid": true,
+  "base_output_checks": {
+    "all_regression_baselines_present": true,
+    "all_classification_baselines_present": true,
+    "all_reset_comparisons_present": true,
+    "all_detector_comparisons_present": true,
+    "all_runs_have_finite_metrics": true,
+    "classification_scores_in_bounds": true,
+    "all_alarms_accounted_for": true,
+    "all_experiments_marked_complete": true,
+    "identical_sample_counts_for_each_dataset": true,
+    "all_seed_model_combinations_unique": true,
+    "sealed_raw_records_and_all_exports_match": true
+  },
+  "report_format": "Markdown; no PDF created"
+}

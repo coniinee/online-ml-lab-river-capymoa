@@ -1,0 +1,22 @@
+{
+  "formal_runs": 147,
+  "notebook_executed_cells": 7,
+  "notebook_errors": 0,
+  "embedded_html_figures": 8,
+  "reports": {
+    "output/part2_capymoa/part2_capymoa_report.md": {
+      "tables": 6,
+      "figures": 6,
+      "words_including_tables": 3704
+    },
+    "output/lab_report/lab_report.md": {
+      "tables": 12,
+      "figures": 7,
+      "words_including_tables": 4607
+    }
+  },
+  "local_links_checked": 35,
+  "all_315_records_recomputed_and_sealed": true,
+  "legacy_cache_acceptance_disabled": true,
+  "sh_budget_semantics_audited": true
+}

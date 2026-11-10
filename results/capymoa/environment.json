@@ -1,0 +1,45 @@
+{
+  "python": "3.11.16",
+  "python_executable": "<CAPY_ENV>/bin/python",
+  "platform": "macOS-15.7.9-x86_64-i386-64bit",
+  "logical_cpus": 16,
+  "physical_memory_gib": 32.0,
+  "java_version": "17.0.20.1",
+  "java_home": "<JAVA_HOME>",
+  "jvm_arguments": [
+    "-Xmx4g",
+    "-Xss8m",
+    "-XX:ActiveProcessorCount=1",
+    "--enable-native-access=ALL-UNNAMED"
+  ],
+  "moa_jar_sha256": "e7d7c3d533a4800bf2581f820d2c1e9310d70ff40b52fc1a742793eceb89a660",
+  "automl_overlay": {
+    "patch_version": 1,
+    "upstream_moa_sha256": "e7d7c3d533a4800bf2581f820d2c1e9310d70ff40b52fc1a742793eceb89a660",
+    "overlay_sha256": "0dcf5096735e307b8a13c8148168dfa09faee7b355197042e031e10068c6b259",
+    "replacements": {
+      "moa/classifiers/meta/AutoML/AutoClass.class": 1,
+      "moa/classifiers/meta/AutoML/BooleanParameter.class": 1,
+      "moa/classifiers/meta/AutoML/CategoricalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/IntegerParameter.class": 1,
+      "moa/classifiers/meta/AutoML/OrdinalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/NumericalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/TruncatedNormal.class": 1
+    },
+    "sources": {
+      "vendor/java/lab4/PatchAutoML.java": "8ce56b47b9725c85e02a2d83c53917f27850703caae96326ea087eb6d6099ef4",
+      "vendor/java/lab4/SeededRandom.java": "cb01803f8badb65ed4c337ce299e26cf2280c18271bfcbd942d1811aca2008d8"
+    }
+  },
+  "versions": {
+    "river": "0.26.1",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "psutil": "7.2.2",
+    "capymoa": "0.15.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "jpype1": "1.7.1"
+  },
+  "about": "CapyMOA 0.15.1\n  CAPYMOA_DATASETS_DIR: <PROJECT_ROOT>/data/capymoa\n  CAPYMOA_MOA_JAR:      <CAPY_ENV>/lib/python3.11/site-packages/capymoa/jar/moa.jar\n  CAPYMOA_JVM_ARGS:     ['-Xmx4g', '-Xss8m', '-XX:ActiveProcessorCount=1']\n  JAVA_HOME:            <JAVA_HOME>\n  MOA version:          e7d7c3d533a4800bf2581f820d2c1e9310d70ff40b52fc1a742793eceb89a660\n  JAVA version:         17.0.20.1\n"
+}

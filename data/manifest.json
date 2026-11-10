@@ -1,0 +1,185 @@
+{
+  "config": {
+    "max_samples": 10000,
+    "stream_seed": 2026,
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "checkpoint_every": 200,
+    "rolling_window": 500,
+    "detector_warmup": 200,
+    "drift_match_window": 1500,
+    "forest_trees": 5,
+    "knn_window": 300
+  },
+  "datasets": [
+    {
+      "dataset": "TrumpApproval",
+      "task": "regression",
+      "kind": "real",
+      "n_samples": 1001,
+      "original_n_samples": 1001,
+      "encoded_n_features": 6,
+      "source": "River packaged FiveThirtyEight approval data",
+      "categorical_columns": [],
+      "sha256_uncompressed": "0c4ed88e18737411af07cd3bc0e3f90fb16edcee56b2521b9a438f392560b6db",
+      "cache": "data/processed/TrumpApproval.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    },
+    {
+      "dataset": "ChickWeights",
+      "task": "regression",
+      "kind": "real",
+      "n_samples": 578,
+      "original_n_samples": 578,
+      "encoded_n_features": 55,
+      "source": "River packaged longitudinal chick weights",
+      "categorical_columns": [
+        "chick",
+        "diet"
+      ],
+      "sha256_uncompressed": "568af60d325911a0c8fa2cc97b1582681e25ff493b38e2f04ca73b9c6a70fccb",
+      "cache": "data/processed/ChickWeights.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    },
+    {
+      "dataset": "Bikes",
+      "task": "regression",
+      "kind": "real",
+      "n_samples": 10000,
+      "original_n_samples": 182470,
+      "encoded_n_features": 24,
+      "source": "https://maxhalford.github.io/files/datasets/toulouse_bikes.zip",
+      "categorical_columns": [
+        "station"
+      ],
+      "sha256_uncompressed": "ebf5d3b32519d3b5c20b3cf35f8e9a6ac12003cb5131cebbbf468d0aa7504245",
+      "cache": "data/processed/Bikes.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    },
+    {
+      "dataset": "FriedmanDrift",
+      "task": "regression",
+      "kind": "synthetic",
+      "n_samples": 10000,
+      "original_n_samples": 10000,
+      "encoded_n_features": 10,
+      "source": "River synth.FriedmanDrift, global recurring abrupt (gra)",
+      "categorical_columns": [],
+      "sha256_uncompressed": "bbb0f5ed94d877f5f925407f3311ffd574d08b6868414188d158ee838c125ce1",
+      "cache": "data/processed/FriedmanDrift.jsonl.gz",
+      "stream_seed": 2026,
+      "known_drift_positions": [
+        3333,
+        6666
+      ],
+      "class_labels": [],
+      "order": "generated order",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    },
+    {
+      "dataset": "Elec2",
+      "task": "classification",
+      "kind": "real",
+      "n_samples": 10000,
+      "original_n_samples": 45312,
+      "encoded_n_features": 14,
+      "source": "https://maxhalford.github.io/files/datasets/electricity.zip",
+      "categorical_columns": [
+        "day"
+      ],
+      "sha256_uncompressed": "50bd26f2514be62f366488844dae3358db52ccf1b346d945aa6e103ed8937076",
+      "cache": "data/processed/Elec2.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [
+        false,
+        true
+      ],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    },
+    {
+      "dataset": "Phishing",
+      "task": "classification",
+      "kind": "real",
+      "n_samples": 1250,
+      "original_n_samples": 1250,
+      "encoded_n_features": 9,
+      "source": "River packaged UCI website phishing data",
+      "categorical_columns": [],
+      "sha256_uncompressed": "5adcd7761f49a7a2a6bb20f57c54142a3a869c074bce8c45670be36dc37b36be",
+      "cache": "data/processed/Phishing.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [
+        false,
+        true
+      ],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Static benchmark order, not a validated temporal process"
+    },
+    {
+      "dataset": "ImageSegments",
+      "task": "classification",
+      "kind": "real",
+      "n_samples": 2310,
+      "original_n_samples": 2310,
+      "encoded_n_features": 18,
+      "source": "River packaged UCI image segmentation data (7 classes)",
+      "categorical_columns": [],
+      "sha256_uncompressed": "89cd6368679a797176d0186c79b6f0b1b63a523017f553ac6763a4dfc4217a16",
+      "cache": "data/processed/ImageSegments.jsonl.gz",
+      "stream_seed": null,
+      "known_drift_positions": [],
+      "class_labels": [
+        "brickface",
+        "cement",
+        "foliage",
+        "grass",
+        "path",
+        "sky",
+        "window"
+      ],
+      "order": "original supplied order; no shuffling",
+      "temporal_note": "Static benchmark order, not a validated temporal process"
+    },
+    {
+      "dataset": "SEARecurring",
+      "task": "classification",
+      "kind": "synthetic",
+      "n_samples": 10000,
+      "original_n_samples": 10000,
+      "encoded_n_features": 3,
+      "source": "River synth.SEA variant 0 with abrupt label inversion and recurrence",
+      "categorical_columns": [],
+      "sha256_uncompressed": "de9fba6ce0abfb58e6ea0085649e397117973cb64e34fea0c89ea58ed439e030",
+      "cache": "data/processed/SEARecurring.jsonl.gz",
+      "stream_seed": 2026,
+      "known_drift_positions": [
+        3333,
+        6666
+      ],
+      "class_labels": [
+        false,
+        true
+      ],
+      "order": "generated order",
+      "temporal_note": "Use supplied order; no real-data drift ground truth assumed"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "Elec2", "model": "LinearLogistic", "seed": 43, "library": "River", "id": "classification__Elec2__43__LinearLogistic__River"}

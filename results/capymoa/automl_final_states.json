@@ -1,0 +1,1634 @@
+[
+  {
+    "dataset": "SEARecurring",
+    "model": "AutoClass",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 4,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "27a8b442f7424f98",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 152 -c 0.005665743569829729",
+          "search_parameters": {
+            "g": "152",
+            "c": "0.005665743569829729"
+          },
+          "performance": 0.8520000000000006
+        },
+        {
+          "slot": 3,
+          "id": "a344b0d93e165426",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 96 -c 0.006525329594803351",
+          "search_parameters": {
+            "g": "96",
+            "c": "0.006525329594803351"
+          },
+          "performance": 0.8680000000000007
+        },
+        {
+          "slot": 4,
+          "id": "7baab609b27a9d91",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 92 -c 0.00848859371409913",
+          "search_parameters": {
+            "g": "92",
+            "c": "0.00848859371409913"
+          },
+          "performance": 0.8640000000000007
+        },
+        {
+          "slot": 5,
+          "id": "ee3e95df045ff39d",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 51 -c 0.006689110376706173",
+          "search_parameters": {
+            "g": "51",
+            "c": "0.006689110376706173"
+          },
+          "performance": 0.8240000000000006
+        },
+        {
+          "slot": 6,
+          "id": "949e62cd14686ce9",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 147 -c 0.006931345683044358",
+          "search_parameters": {
+            "g": "147",
+            "c": "0.006931345683044358"
+          },
+          "performance": 0.8760000000000007
+        },
+        {
+          "slot": 7,
+          "id": "fec2f68a090e19d7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 109 -c 0.001156892513003311",
+          "search_parameters": {
+            "g": "109",
+            "c": "0.001156892513003311"
+          },
+          "performance": 0.8520000000000006
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 43,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "Bandit",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "upstream_reported_best_index": 3,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 64.12556053811659,
+          "training_updates": 223,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 70.995670995671,
+          "training_updates": 231,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 63.90243902439025,
+          "training_updates": 205,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 88.06960304513322,
+          "training_updates": 9195,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 69.02654867256636,
+          "training_updates": 226,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          13433.750064793632,
+          15676.794673951976,
+          12045.170630991075,
+          803733.7510799401,
+          13275.692658452874
+        ],
+        "counts": [
+          223,
+          231,
+          205,
+          9195,
+          226
+        ],
+        "means": [
+          60.241031680688934,
+          67.8649120084501,
+          58.75692990727354,
+          87.409869611739,
+          58.742002913508294
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "SuccessiveHalving",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        3
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 85.77442299317754,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 86.34658664666166,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 85.82145536384095,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 88.48,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 85.42897327707453,
+          "training_updates": 3555,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "SuccessiveHalving",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        2
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 2,
+      "prediction_candidate_id": "candidate_2",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 87.0886075949367,
+          "training_updates": 3555,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 78.57453912033677,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 64.68,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 89.72243060765192,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 90.32258064516128,
+          "training_updates": 1333,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "Bandit",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 1,
+      "prediction_candidate_id": "candidate_1",
+      "upstream_reported_best_index": 1,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 60.698689956331876,
+          "training_updates": 229,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 66.64848352607461,
+          "training_updates": 9166,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 63.45381526104418,
+          "training_updates": 249,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 60.71428571428571,
+          "training_updates": 224,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 59.43396226415094,
+          "training_updates": 212,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          14106.542795246283,
+          743530.577022315,
+          16573.464076522734,
+          14316.501934012595,
+          13675.144015681537
+        ],
+        "counts": [
+          229,
+          9166,
+          249,
+          224,
+          212
+        ],
+        "means": [
+          61.60062356002744,
+          81.11832609887792,
+          66.56009669286239,
+          63.91295506255623,
+          64.5053963003846
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "FixedHT",
+    "seed": 42,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "AutoClass",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 4,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "ab48c26b1f4ab89c",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 186 -c 0.003701844087947106",
+          "search_parameters": {
+            "g": "186",
+            "c": "0.003701844087947106"
+          },
+          "performance": 0.9280000000000007
+        },
+        {
+          "slot": 3,
+          "id": "60787823558e4a19",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 176 -c 0.002782066785132439",
+          "search_parameters": {
+            "g": "176",
+            "c": "0.002782066785132439"
+          },
+          "performance": 0.7800000000000006
+        },
+        {
+          "slot": 4,
+          "id": "7b4a00fc500a6fc7",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 168 -c 2.7980541061843736E-4",
+          "search_parameters": {
+            "g": "168",
+            "c": "2.7980541061843736E-4"
+          },
+          "performance": 0.8480000000000006
+        },
+        {
+          "slot": 5,
+          "id": "ef97c7fea85907d8",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 104 -c 0.008412173498376188",
+          "search_parameters": {
+            "g": "104",
+            "c": "0.008412173498376188"
+          },
+          "performance": 0.8440000000000006
+        },
+        {
+          "slot": 6,
+          "id": "1c64a092fbefded1",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 140 -c 0.006788557776423974",
+          "search_parameters": {
+            "g": "140",
+            "c": "0.006788557776423974"
+          },
+          "performance": 0.9280000000000007
+        },
+        {
+          "slot": 7,
+          "id": "d23dd6319d38b6dd",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 155 -c 0.005464061146451348",
+          "search_parameters": {
+            "g": "155",
+            "c": "0.005464061146451348"
+          },
+          "performance": 0.9080000000000007
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 42,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "FixedHT",
+    "seed": 43,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "AutoClass",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 6,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "fdf0c6e02896bf09",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 162 -c 0.005865056351818943",
+          "search_parameters": {
+            "g": "162",
+            "c": "0.005865056351818943"
+          },
+          "performance": 0.7520000000000006
+        },
+        {
+          "slot": 3,
+          "id": "f256349c961d8840",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 84 -c 0.0019830249856372184",
+          "search_parameters": {
+            "g": "84",
+            "c": "0.0019830249856372184"
+          },
+          "performance": 0.8120000000000006
+        },
+        {
+          "slot": 4,
+          "id": "50d0e5163a76bbfa",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 109 -c 0.0010510291815400946",
+          "search_parameters": {
+            "g": "109",
+            "c": "0.0010510291815400946"
+          },
+          "performance": 0.9240000000000007
+        },
+        {
+          "slot": 5,
+          "id": "502c3d3a6e21a13b",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 98 -c 0.006519054002480226",
+          "search_parameters": {
+            "g": "98",
+            "c": "0.006519054002480226"
+          },
+          "performance": 0.9040000000000007
+        },
+        {
+          "slot": 6,
+          "id": "ae2935041cbad15f",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 50 -c 0.004697419357930802",
+          "search_parameters": {
+            "g": "50",
+            "c": "0.004697419357930802"
+          },
+          "performance": 0.8800000000000007
+        },
+        {
+          "slot": 7,
+          "id": "30a3b534a265c0ff",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 85 -c 0.007821991931843632",
+          "search_parameters": {
+            "g": "85",
+            "c": "0.007821991931843632"
+          },
+          "performance": 0.9480000000000007
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 43,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "Bandit",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 2,
+      "prediction_candidate_id": "candidate_2",
+      "upstream_reported_best_index": 2,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 60.50420168067227,
+          "training_updates": 238,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 62.55506607929515,
+          "training_updates": 227,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 64.10535481062254,
+          "training_updates": 9188,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 57.692307692307686,
+          "training_updates": 234,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 58.549222797927456,
+          "training_updates": 193,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          14178.456314863633,
+          14474.182840684329,
+          737351.8674822974,
+          14544.245657585847,
+          11768.707859532464
+        ],
+        "counts": [
+          238,
+          227,
+          9188,
+          234,
+          193
+        ],
+        "means": [
+          59.57334586077157,
+          63.76292000301466,
+          80.25161814130358,
+          62.15489597258909,
+          60.97776093022002
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "SuccessiveHalving",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        3
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 85.77442299317754,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 86.34658664666166,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 85.82145536384095,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 88.48,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 85.42897327707453,
+          "training_updates": 3555,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "Elec2",
+    "model": "FixedHT",
+    "seed": 44,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "SuccessiveHalving",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        2
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 2,
+      "prediction_candidate_id": "candidate_2",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 87.0886075949367,
+          "training_updates": 3555,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 78.57453912033677,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 64.68,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 89.72243060765192,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 90.32258064516128,
+          "training_updates": 1333,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "AutoClass",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 5,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "fd43c9dea63f2e2c",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 105 -c 0.009192841588951416",
+          "search_parameters": {
+            "g": "105",
+            "c": "0.009192841588951416"
+          },
+          "performance": 0.8680000000000007
+        },
+        {
+          "slot": 3,
+          "id": "57debd06546dc503",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 168 -c 0.0073352983211442836",
+          "search_parameters": {
+            "g": "168",
+            "c": "0.0073352983211442836"
+          },
+          "performance": 0.8400000000000006
+        },
+        {
+          "slot": 4,
+          "id": "88c743273137507e",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 102 -c 0.008560443461573546",
+          "search_parameters": {
+            "g": "102",
+            "c": "0.008560443461573546"
+          },
+          "performance": 0.7400000000000005
+        },
+        {
+          "slot": 5,
+          "id": "64721bc78fb815ae",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 139 -c 0.006102522421328624",
+          "search_parameters": {
+            "g": "139",
+            "c": "0.006102522421328624"
+          },
+          "performance": 0.8520000000000006
+        },
+        {
+          "slot": 6,
+          "id": "074e6c866b43137e",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 59 -c 0.006704257881578878",
+          "search_parameters": {
+            "g": "59",
+            "c": "0.006704257881578878"
+          },
+          "performance": 0.7320000000000005
+        },
+        {
+          "slot": 7,
+          "id": "24acefbafea5edf6",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 83 -c 0.009657566301378064",
+          "search_parameters": {
+            "g": "83",
+            "c": "0.009657566301378064"
+          },
+          "performance": 0.8280000000000006
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 42,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "FixedHT",
+    "seed": 43,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "Bandit",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "upstream_reported_best_index": 3,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 76.79324894514767,
+          "training_updates": 237,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 72.68722466960352,
+          "training_updates": 227,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 64.75770925110133,
+          "training_updates": 227,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 88.03827751196172,
+          "training_updates": 9196,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 62.69430051813472,
+          "training_updates": 193,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          16473.18694496934,
+          15115.765131915527,
+          13707.18251800564,
+          807302.6495298024,
+          12194.834217733833
+        ],
+        "counts": [
+          237,
+          227,
+          227,
+          9196,
+          193
+        ],
+        "means": [
+          69.50711791126304,
+          66.58927370887898,
+          60.38406395597198,
+          87.78845688666837,
+          63.18566952193696
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "FixedHT",
+    "seed": 44,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "SuccessiveHalving",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        3
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 85.77442299317754,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 86.34658664666166,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 85.82145536384095,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 88.48,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 85.42897327707453,
+          "training_updates": 3555,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "AutoClass",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 1,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "699c38f45262c16a",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 160 -c 0.0018122926793238603",
+          "search_parameters": {
+            "g": "160",
+            "c": "0.0018122926793238603"
+          },
+          "performance": 0.6600000000000005
+        },
+        {
+          "slot": 3,
+          "id": "73b81d5759471814",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 154 -c 0.00388145124184748",
+          "search_parameters": {
+            "g": "154",
+            "c": "0.00388145124184748"
+          },
+          "performance": 0.8360000000000006
+        },
+        {
+          "slot": 4,
+          "id": "0200fb5600adcc2d",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 96 -c 0.001999856282082577",
+          "search_parameters": {
+            "g": "96",
+            "c": "0.001999856282082577"
+          },
+          "performance": 0.45200000000000035
+        },
+        {
+          "slot": 5,
+          "id": "e716a20b358f96bd",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 113 -c 0.006859457299209571",
+          "search_parameters": {
+            "g": "113",
+            "c": "0.006859457299209571"
+          },
+          "performance": 0.8760000000000007
+        },
+        {
+          "slot": 6,
+          "id": "162213d67092eb5c",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 92 -c 0.0057249837616151645",
+          "search_parameters": {
+            "g": "92",
+            "c": "0.0057249837616151645"
+          },
+          "performance": 0.8440000000000006
+        },
+        {
+          "slot": 7,
+          "id": "0ad2a5f1cfc0ba14",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 88 -c 0.002541883360769981",
+          "search_parameters": {
+            "g": "88",
+            "c": "0.002541883360769981"
+          },
+          "performance": 0.8600000000000007
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 44,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "Bandit",
+    "seed": 43,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 0,
+      "prediction_candidate_id": "candidate_0",
+      "upstream_reported_best_index": 0,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 65.27913279132791,
+          "training_updates": 9225,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 59.307359307359306,
+          "training_updates": 231,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 60.0,
+          "training_updates": 205,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 59.58549222797927,
+          "training_updates": 193,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 60.17699115044248,
+          "training_updates": 226,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          771441.5028444475,
+          14267.27405000233,
+          12852.244170209226,
+          12254.634966982034,
+          14842.940669971696
+        ],
+        "counts": [
+          9225,
+          231,
+          205,
+          193,
+          226
+        ],
+        "means": [
+          83.6250951592897,
+          61.76309112555121,
+          62.69387400102061,
+          63.49551796363748,
+          65.67672862819335
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "Elec2",
+    "model": "AutoClass",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "AutoClass",
+      "observations": 10000,
+      "best_model_index": 2,
+      "candidates": [
+        {
+          "slot": 0,
+          "id": "eb1b6c76fbfdb2fe",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 100",
+          "search_parameters": {
+            "g": "100",
+            "c": "1.0E-7"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 1,
+          "id": "8c5758884358bcc7",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 100 -c 0.001",
+          "search_parameters": {
+            "g": "100",
+            "c": "0.001"
+          },
+          "performance": 0.0
+        },
+        {
+          "slot": 2,
+          "id": "7caa5f3181b49ee5",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 159 -c 0.0043638588830562895",
+          "search_parameters": {
+            "g": "159",
+            "c": "0.0043638588830562895"
+          },
+          "performance": 0.9240000000000007
+        },
+        {
+          "slot": 3,
+          "id": "44086cd23ca0b635",
+          "model": "moa.classifiers.trees.HoeffdingTree",
+          "parameters": "-g 62 -c 0.0018685232051294399",
+          "search_parameters": {
+            "g": "62",
+            "c": "0.0018685232051294399"
+          },
+          "performance": 0.8360000000000006
+        },
+        {
+          "slot": 4,
+          "id": "05829e1910916fba",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 75 -c 0.00328155841817145",
+          "search_parameters": {
+            "g": "75",
+            "c": "0.00328155841817145"
+          },
+          "performance": 0.8560000000000006
+        },
+        {
+          "slot": 5,
+          "id": "cca9db80a57daa8e",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 181 -c 0.0037331976716556705",
+          "search_parameters": {
+            "g": "181",
+            "c": "0.0037331976716556705"
+          },
+          "performance": 0.8320000000000006
+        },
+        {
+          "slot": 6,
+          "id": "b98aa549347ebfbe",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 53 -c 3.4824541903109277E-4",
+          "search_parameters": {
+            "g": "53",
+            "c": "3.4824541903109277E-4"
+          },
+          "performance": 0.8760000000000007
+        },
+        {
+          "slot": 7,
+          "id": "4d608423816e18fb",
+          "model": "moa.classifiers.trees.HoeffdingAdaptiveTree",
+          "parameters": "-g 77 -c 0.0021729341639907347",
+          "search_parameters": {
+            "g": "77",
+            "c": "0.0021729341639907347"
+          },
+          "performance": 0.8760000000000007
+        }
+      ],
+      "total_models": 8,
+      "random_seed": 44,
+      "random_source": "Per-learner java.util.Random via reviewed AutoML overlay; serial execution."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "SuccessiveHalving",
+    "seed": 42,
+    "state": {
+      "schema": 2,
+      "method": "SuccessiveHalving",
+      "observations": 10000,
+      "active_models": 1,
+      "total_models": 5,
+      "active_indices": [
+        2
+      ],
+      "current_rung": 3,
+      "total_budget": 20000,
+      "budget_used": 19999,
+      "budget_left": 1,
+      "iterations_in_current_rung": 3111,
+      "actual_model_updates": 23110,
+      "best_model_index": 2,
+      "prediction_candidate_id": "candidate_2",
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 87.0886075949367,
+          "training_updates": 3555,
+          "active": false
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 78.57453912033677,
+          "training_updates": 6889,
+          "active": false
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 64.68,
+          "training_updates": 10000,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 89.72243060765192,
+          "training_updates": 1333,
+          "active": false
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 90.32258064516128,
+          "training_updates": 1333,
+          "active": false
+        }
+      ]
+    },
+    "derived_model_updates": 23110,
+    "budget_counter_scope": "Completed rungs only; derived count additionally includes survivor/current-rung updates."
+  },
+  {
+    "dataset": "Elec2",
+    "model": "Bandit",
+    "seed": 44,
+    "state": {
+      "schema": 2,
+      "method": "Bandit",
+      "observations": 10000,
+      "total_models": 5,
+      "best_model_index": 3,
+      "prediction_candidate_id": "candidate_3",
+      "upstream_reported_best_index": 3,
+      "candidates": [
+        {
+          "id": "candidate_0",
+          "index": 0,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 50 -z -p",
+          "accuracy_percent": 63.1578947368421,
+          "training_updates": 228,
+          "active": true
+        },
+        {
+          "id": "candidate_1",
+          "index": 1,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -g 100 -z -p",
+          "accuracy_percent": 68.0365296803653,
+          "training_updates": 219,
+          "active": true
+        },
+        {
+          "id": "candidate_2",
+          "index": 2,
+          "model": "HoeffdingTree",
+          "parameters": "-m 33554433 -z -p",
+          "accuracy_percent": 65.06024096385542,
+          "training_updates": 249,
+          "active": true
+        },
+        {
+          "id": "candidate_3",
+          "index": 3,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -g 50 -c 0.001 -z -p",
+          "accuracy_percent": 87.73440907108592,
+          "training_updates": 9172,
+          "active": true
+        },
+        {
+          "id": "candidate_4",
+          "index": 4,
+          "model": "HoeffdingAdaptiveTree",
+          "parameters": "-m 33554433 -c 0.001 -z -p",
+          "accuracy_percent": 66.98113207547169,
+          "training_updates": 212,
+          "active": true
+        }
+      ],
+      "policy": {
+        "rewards": [
+          13873.465854868033,
+          13522.799612841593,
+          15422.116884214036,
+          799032.5276455148,
+          13136.326150768096
+        ],
+        "counts": [
+          228,
+          219,
+          249,
+          9172,
+          212
+        ],
+        "means": [
+          60.84853445117558,
+          61.74794343763284,
+          61.93621238640175,
+          87.11649887107663,
+          61.96380259796272
+        ]
+      },
+      "burn_in_pulls": 100,
+      "burn_in_observations": 20,
+      "reward_definition": "Cumulative candidate accuracy in percent per pull; upstream policy unchanged."
+    }
+  },
+  {
+    "dataset": "SEARecurring",
+    "model": "FixedHT",
+    "seed": 42,
+    "state": {
+      "method": "FixedHT",
+      "observations": 10000
+    }
+  }
+]

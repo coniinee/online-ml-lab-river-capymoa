@@ -1,0 +1,36 @@
+{
+  "config": {
+    "max_samples": 10000,
+    "stream_seed": 2026,
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "checkpoint_every": 200,
+    "rolling_window": 500,
+    "detector_warmup": 200,
+    "drift_match_window": 1500,
+    "forest_trees": 5,
+    "knn_window": 300
+  },
+  "fingerprint": "25a9768b1100fbaa45b9dffc2d15d7e5c1240f584c5b47589f8a6c42b8be7395",
+  "river_version": "0.26.1",
+  "python": "3.11.16",
+  "platform": "macOS-15.7.9-x86_64-i386-64bit",
+  "logical_cpus": 16,
+  "physical_memory_gb": 32.0,
+  "evaluation": "Sequential predict, score, detect (optional reset), learn; zero-based drift indices",
+  "timing": "perf_counter_ns predict+learn; reset runs also include detection+reinitialization. Metrics, checkpoints and RSS sampling excluded from latency, included in total runtime. Data download/encoding and model initialization excluded. No parallel experiments.",
+  "memory": "Process RSS sampled at checkpoints; includes data and Python runtime, not model-exclusive memory, not a guaranteed continuous peak. RSS deltas depend on allocator reuse.",
+  "monitoring": "Detectors replay the identical HoeffdingTree prequential error signal, without influencing learning. Detector-only replay time is separate, never reported as directly measured combined model time.",
+  "regression_signal": "min(abs(y-yhat)/(3*max(past-target sample std,1)),1); scale uses earlier targets only and is retained across model resets",
+  "classification_signal": "0/1 prequential error, including multiclass tasks",
+  "cold_start": "Regression predicts 0 from untrained models; a classifier returning None uses the past-label majority, or False/brickface at the first example. All examples are scored.",
+  "drift_matching": "First alarm per known synthetic change inside inclusive [change, change+1500]. Unmatched alarms and missed changes retained; no drift truth assumed for real data.",
+  "repeats": "Three model/detector seeds on the same cached stream; this is not three independent dataset replications. Deterministic model predictive scores repeat.",
+  "runner_wall_time_s": 137.3997784130006,
+  "completed_model_runs": 168,
+  "completed_monitor_replays": 72,
+  "complete": true
+}

@@ -1,0 +1,13 @@
+{
+  "river_lab/analysis.py": "73460b42236530196ed0794a7af26405d1fb409b708425ffbf557ff188568314",
+  "river_lab/models.py": "3691f5e4c6377f734008438d1cc78c883af5fca1cd0475084d2a2df838f5ea07",
+  "river_lab/evaluation.py": "ccc61177451ac70838d7b160198e39ed3df09e9003a320f6e3bc5e0c50cbff11",
+  "river_lab/__init__.py": "75dbd5769efa6755378b44c3ee329f72e12f0003e6c29881219278e3fd7d81de",
+  "river_lab/data.py": "34ed5275c665925ff71d524a8f7c4c0dcb062c25ccfb1e51db3805d00595d72d",
+  "capy_lab/analysis.py": "06f8f4faee5d7d78c7616aa27cbd1021e2a1626e9c977adfa76bbb862755666c",
+  "capy_lab/models.py": "f0e192a6f4645c2489f7ffaa2982422d9ba63677613acbe04b2e040fbb37e962",
+  "capy_lab/__init__.py": "34883bea5ad077f1d9f1cf0e55b63e2212ec0308aab254f54eaccf1fb33d3003",
+  "capy_lab/runtime.py": "bd46a4c6b4f7482ca3d7bf1f21d4db2f430f16befb34293a58e069673734e85f",
+  "capy_lab/experiments.py": "38212d1637c43d32bc20cfa32858e83044ad1ed0556c533d790ea360d283c932",
+  "capy_lab/common.py": "f3fe6751c367d4130d2f3f777d2c06d9d557ee0fc2ef0c2d39013a8e80402e10"
+}

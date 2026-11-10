@@ -1,0 +1,7 @@
+# Separate Part 2 environment; preserve the original River environment.
+capymoa==0.15.1
+river==0.26.1
+jupyterlab
+ipykernel
+nbconvert
+psutil

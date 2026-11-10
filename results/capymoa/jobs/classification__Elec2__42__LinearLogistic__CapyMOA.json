@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "Elec2", "model": "LinearLogistic", "seed": 42, "library": "CapyMOA", "id": "classification__Elec2__42__LinearLogistic__CapyMOA"}

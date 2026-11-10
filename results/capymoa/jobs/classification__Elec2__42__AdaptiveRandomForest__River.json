@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "Elec2", "model": "AdaptiveRandomForest", "seed": 42, "library": "River", "id": "classification__Elec2__42__AdaptiveRandomForest__River"}

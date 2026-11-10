@@ -1,0 +1,13 @@
+{
+  "all_regression_baselines_present": true,
+  "all_classification_baselines_present": true,
+  "all_reset_comparisons_present": true,
+  "all_detector_comparisons_present": true,
+  "all_runs_have_finite_metrics": true,
+  "classification_scores_in_bounds": true,
+  "all_alarms_accounted_for": true,
+  "all_experiments_marked_complete": true,
+  "identical_sample_counts_for_each_dataset": true,
+  "all_seed_model_combinations_unique": true,
+  "sealed_raw_records_and_all_exports_match": true
+}

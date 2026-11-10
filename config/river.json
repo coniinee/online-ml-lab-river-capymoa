@@ -1,0 +1,11 @@
+{
+  "max_samples": 10000,
+  "stream_seed": 2026,
+  "model_seeds": [42, 43, 44],
+  "checkpoint_every": 200,
+  "rolling_window": 500,
+  "detector_warmup": 200,
+  "drift_match_window": 1500,
+  "forest_trees": 5,
+  "knn_window": 300
+}

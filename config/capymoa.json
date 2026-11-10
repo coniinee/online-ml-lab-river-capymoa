@@ -1,0 +1,23 @@
+{
+  "seeds": [42, 43, 44],
+  "classification_datasets": ["Elec2", "Phishing", "ImageSegments", "SEARecurring"],
+  "families": ["HoeffdingTree", "AdaptiveRandomForest", "LinearLogistic", "GaussianNB"],
+  "checkpoint_every": 200,
+  "rolling_window": 500,
+  "forest_trees": 5,
+  "tree_grace_period": 100,
+  "tree_memory_mib": 64,
+  "tree_max_depth": null,
+  "jvm_args": "-Xmx4g -Xss8m -XX:ActiveProcessorCount=1",
+  "cluster_datasets": ["ImageSegments", "Phishing", "MovingGaussians"],
+  "cluster_models": ["CluStream", "ClusTree", "DenStream"],
+  "cluster_calibration": 200,
+  "cluster_macro_k": 3,
+  "cluster_refresh": 200,
+  "cluster_eval_every": 500,
+  "cluster_synthetic_n": 6000,
+  "cluster_synthetic_seed": 2026,
+  "automl_datasets": ["Elec2", "SEARecurring"],
+  "automl_models": ["FixedHT", "Bandit", "SuccessiveHalving", "AutoClass"],
+  "worker_timeout_s": 300
+}

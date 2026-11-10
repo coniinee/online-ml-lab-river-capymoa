@@ -1,0 +1,149 @@
+{
+  "all_315_current_records_sealed": true,
+  "all_raw_csv_exports_consistent": true,
+  "selection_checkpoints_verified": 900,
+  "all_6_autoclass_formal_runs_reproduced_with_selection_hashes": true,
+  "preflight_12_fresh_process_runs": true,
+  "old_315_records_preserved_in_archive": true,
+  "unchanged_predictive_results": 309,
+  "predictive_changes": [
+    {
+      "part": 2,
+      "dataset": "SEARecurring",
+      "model": "AutoClass",
+      "seed": 43,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8588,
+          "after": 0.8716
+        },
+        "macro_f1": {
+          "before": 0.8569009264712368,
+          "after": 0.8705325877946352
+        },
+        "kappa": {
+          "before": 0.713877952735961,
+          "after": 0.7410827299156121
+        }
+      }
+    },
+    {
+      "part": 2,
+      "dataset": "Elec2",
+      "model": "AutoClass",
+      "seed": 42,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8803,
+          "after": 0.8869
+        },
+        "macro_f1": {
+          "before": 0.8780611726450565,
+          "after": 0.8845490385920716
+        },
+        "kappa": {
+          "before": 0.7561234409014362,
+          "after": 0.7691184612143512
+        }
+      }
+    },
+    {
+      "part": 2,
+      "dataset": "Elec2",
+      "model": "AutoClass",
+      "seed": 43,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8851,
+          "after": 0.8811
+        },
+        "macro_f1": {
+          "before": 0.8829702922072912,
+          "after": 0.8786143112052804
+        },
+        "kappa": {
+          "before": 0.76594112080836,
+          "after": 0.7572519400653611
+        }
+      }
+    },
+    {
+      "part": 2,
+      "dataset": "SEARecurring",
+      "model": "AutoClass",
+      "seed": 42,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8617,
+          "after": 0.8582
+        },
+        "macro_f1": {
+          "before": 0.8603114835747666,
+          "after": 0.8566914250252993
+        },
+        "kappa": {
+          "before": 0.720623105418619,
+          "after": 0.7133866040779547
+        }
+      }
+    },
+    {
+      "part": 2,
+      "dataset": "SEARecurring",
+      "model": "AutoClass",
+      "seed": 44,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8521,
+          "after": 0.8671
+        },
+        "macro_f1": {
+          "before": 0.8501767352307158,
+          "after": 0.8657220816278194
+        },
+        "kappa": {
+          "before": 0.7004155291301841,
+          "after": 0.7314455986378694
+        }
+      }
+    },
+    {
+      "part": 2,
+      "dataset": "Elec2",
+      "model": "AutoClass",
+      "seed": 44,
+      "metrics": {
+        "accuracy": {
+          "before": 0.8748,
+          "after": 0.8819
+        },
+        "macro_f1": {
+          "before": 0.8726544775438377,
+          "after": 0.8798856523615157
+        },
+        "kappa": {
+          "before": 0.7453123124043116,
+          "after": 0.759775020865604
+        }
+      }
+    }
+  ],
+  "overlay": {
+    "patch_version": 1,
+    "upstream_moa_sha256": "e7d7c3d533a4800bf2581f820d2c1e9310d70ff40b52fc1a742793eceb89a660",
+    "overlay_sha256": "0dcf5096735e307b8a13c8148168dfa09faee7b355197042e031e10068c6b259",
+    "replacements": {
+      "moa/classifiers/meta/AutoML/AutoClass.class": 1,
+      "moa/classifiers/meta/AutoML/BooleanParameter.class": 1,
+      "moa/classifiers/meta/AutoML/CategoricalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/IntegerParameter.class": 1,
+      "moa/classifiers/meta/AutoML/OrdinalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/NumericalParameter.class": 1,
+      "moa/classifiers/meta/AutoML/TruncatedNormal.class": 1
+    },
+    "sources": {
+      "vendor/java/lab4/PatchAutoML.java": "8ce56b47b9725c85e02a2d83c53917f27850703caae96326ea087eb6d6099ef4",
+      "vendor/java/lab4/SeededRandom.java": "cb01803f8badb65ed4c337ce299e26cf2280c18271bfcbd942d1811aca2008d8"
+    }
+  }
+}

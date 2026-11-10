@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "ImageSegments", "model": "HoeffdingTree", "seed": 44, "library": "CapyMOA", "id": "classification__ImageSegments__44__HoeffdingTree__CapyMOA"}

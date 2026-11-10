@@ -1,0 +1,26 @@
+# Keep ordered data caches and formal records in version control.
+.venv*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.cache/
+.DS_Store
+__MACOSX/
+._*
+*.tmp
+/*.zip
+data/raw/
+# Optional local delivery-check outputs are not part of the formal source package.
+/verification/
+/PAYLOAD_MANIFEST.json
+/SHA256SUMS.txt
+
+# The report is submitted separately and remains local.
+/report/
+/reports/
+/PART1_SUMMARY.md
+/PART2_SUMMARY.md
+/scripts/build_final_report.py
+/scripts/build_part1_report.py
+/scripts/verify_final_report.py
+/scripts/check_report_layout.py

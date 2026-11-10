@@ -1,0 +1,12 @@
+test_cluster_training_never_sees_evaluation_labels (test_capy_protocol.CapyProtocolTests.test_cluster_training_never_sees_evaluation_labels) ... ok
+test_scaling_uses_only_observed_history (test_capy_protocol.CapyProtocolTests.test_scaling_uses_only_observed_history) ... ok
+test_true_label_not_passed_to_prediction (test_capy_protocol.CapyProtocolTests.test_true_label_not_passed_to_prediction) ... ok
+test_delay_matching_keeps_misses_and_extra_alarms (test_protocol.ProtocolTests.test_delay_matching_keeps_misses_and_extra_alarms) ... ok
+test_prediction_precedes_current_label_and_reset (test_protocol.ProtocolTests.test_prediction_precedes_current_label_and_reset) ... <PROJECT_ROOT>/river_lab/evaluation.py:70: DeprecationWarning: Passing an instance to utils.Rolling is deprecated and will be removed in a future release. Pass the class and forward constructor kwargs instead, e.g. utils.Rolling(stats.Mean, window_size=...) or utils.Rolling(stats.Var, window_size=..., ddof=0).
+  rolling = utils.Rolling(metrics.MAE() if task == "regression" else metrics.Accuracy(), config["rolling_window"])
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.157s
+
+OK

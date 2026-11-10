@@ -1,0 +1,17 @@
+{
+  "classification_coverage": true,
+  "clustering_coverage": true,
+  "automl_coverage": true,
+  "all_147_records_present": true,
+  "all_calculation_signatures_current_or_verified_equivalent": true,
+  "same_classifier_input_hash_across_libraries": true,
+  "same_automl_input_hash_per_dataset": true,
+  "same_clustering_input_hash_per_dataset": true,
+  "all_classification_metrics_finite": true,
+  "all_automl_metrics_finite": true,
+  "all_clustering_score_counts_correct": true,
+  "no_duplicate_run_combinations": true,
+  "labels_not_used_to_fit_clusters": true,
+  "score_bounds": true,
+  "sealed_raw_records_and_all_exports_match": true
+}

@@ -1,0 +1,11 @@
+# Direct dependencies for Part 1: River (Python 3.11).
+# requirements.txt records the installed versions, including transitive dependencies.
+river
+numpy
+pandas
+matplotlib
+seaborn
+jupyterlab
+ipykernel
+nbconvert
+psutil

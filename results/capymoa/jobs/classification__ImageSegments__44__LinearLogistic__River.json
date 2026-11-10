@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "ImageSegments", "model": "LinearLogistic", "seed": 44, "library": "River", "id": "classification__ImageSegments__44__LinearLogistic__River"}

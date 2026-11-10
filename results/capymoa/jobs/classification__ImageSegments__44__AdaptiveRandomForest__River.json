@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "ImageSegments", "model": "AdaptiveRandomForest", "seed": 44, "library": "River", "id": "classification__ImageSegments__44__AdaptiveRandomForest__River"}

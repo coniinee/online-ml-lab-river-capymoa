@@ -1,0 +1,23 @@
+{
+  "windowSize": 500,
+  "ensembleSize": 8,
+  "newConfigurations": 2,
+  "keepCurrentModel": true,
+  "lambda": 0.05,
+  "preventAlgorithmDeath": true,
+  "keepGlobalIncumbent": true,
+  "keepAlgorithmIncumbents": true,
+  "keepInitialConfigurations": true,
+  "useTestEnsemble": true,
+  "resetProbability": 0.01,
+  "numberOfCores": 1,
+  "performanceMeasureMaximisation": true,
+  "algorithms": [
+    {"algorithm": "moa.classifiers.trees.HoeffdingTree", "parameters": [
+      {"parameter": "g", "type": "integer", "value": 100, "range": [50, 200]},
+      {"parameter": "c", "type": "float", "value": 0.0000001, "range": [0.0000001, 0.01]}]},
+    {"algorithm": "moa.classifiers.trees.HoeffdingAdaptiveTree", "parameters": [
+      {"parameter": "g", "type": "integer", "value": 100, "range": [50, 200]},
+      {"parameter": "c", "type": "float", "value": 0.001, "range": [0.0000001, 0.01]}]}
+  ]
+}

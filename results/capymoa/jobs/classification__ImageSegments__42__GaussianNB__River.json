@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "ImageSegments", "model": "GaussianNB", "seed": 42, "library": "River", "id": "classification__ImageSegments__42__GaussianNB__River"}

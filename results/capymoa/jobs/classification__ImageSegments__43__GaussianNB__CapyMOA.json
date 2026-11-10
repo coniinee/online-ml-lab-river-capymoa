@@ -1,0 +1,1 @@
+{"stage": "classification", "dataset": "ImageSegments", "model": "GaussianNB", "seed": 43, "library": "CapyMOA", "id": "classification__ImageSegments__43__GaussianNB__CapyMOA"}
